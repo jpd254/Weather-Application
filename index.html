@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Main Weather Dashboard -->
+    <main class="weather-dashboard">
+
+        <header>
+            <h1>Weather Dashboard</h1>
+            <p>Check the weather wherever you are.</p>
+        </header>
+
+        <!-- Location Search -->
+        <section class="location-search">
+            <h2>Search Location</h2>
+
+            <form id="locationForm">
+                <input
+                    type="text"
+                    id="locationInput"
+                    placeholder="Enter a city or zip code"
+                    required
+                >
+
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <!-- Saved Locations -->
+        <section class="saved-locations">
+            <h2>Saved Locations</h2>
+            <div id="savedLocations">
+                <!-- Saved locations will appear here -->
+            </div>
+        </section>
+
+        <!-- Current Weather -->
+        <section class="current-weather">
+            <h2>Current Weather</h2>
+
+            <div id="weatherDisplay">
+                <p>Search for a location to see its weather.</p>
+            </div>
+        </section>
+
+        <!-- Additional Weather Details -->
+        <section class="weather-details">
+            <h2>Weather Details</h2>
+
+            <div id="weatherDetails">
+                <p>Humidity: --</p>
+                <p>Wind Speed: --</p>
+                <p>Atmospheric Pressure: --</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- JavaScript Page Link -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
